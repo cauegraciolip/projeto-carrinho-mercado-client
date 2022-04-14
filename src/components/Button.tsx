@@ -2,8 +2,7 @@ import { styled } from "../stitches.config";
 
 export const Button = styled('button', {
     appearance: "none",
-    fontFamily: "$mono",
-    fontSize: "$2",
+    fontSize: "$1",
     fontWeight: "$3",
     border: "none",
     paddingX: "$2",
@@ -68,7 +67,7 @@ export const Button = styled('button', {
             },
             big: {
                 width: "100%",
-                height: "40px",
+                height: "50px",
                 br: "$2"
             }
         }

@@ -1,8 +1,6 @@
 import { styled } from "../stitches.config";
 
 export const Texts = styled('h1', {
-    fontFamily: "$mono",
-    color: "$darkText",
 
     variants: {
         fonte: {
@@ -26,6 +24,26 @@ export const Texts = styled('h1', {
             },
             icon: {
                 fontSize: "$2"
+            },
+            text: {
+                fontSize: "$1"
+            }
+        },
+        color: {
+            dark: {
+                color: "$darkText"
+            },
+            light: {
+                color: "$textColor"
+            }
+        },
+        link: {
+            true: {
+                "&:hover": {
+                    color: "$blue11",
+                    cursor: "pointer",
+                    transition: "$1"
+                }
             }
         }
     }

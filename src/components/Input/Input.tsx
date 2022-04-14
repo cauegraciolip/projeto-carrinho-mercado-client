@@ -1,12 +1,12 @@
-import { styled } from "../stitches.config";
+import { styled } from "../../stitches.config";
 
 export const Input = styled('input', {
     width: "100%",
-    height: 35,
+    height: "2.5rem",
     fontSize: "$1",
     color: "$label",
     border: "1px solid $green4",
-    paddingX: "4%",
+    paddingX: "2.5em",
     paddingY: "$2",
     outline: "none",
     transition: "$1",

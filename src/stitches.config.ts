@@ -29,14 +29,14 @@ export const {
             ...slate
         },
         fontSizes: {
-            1: "1.2em",
-            2: "1.4em",
-            3: "1.6em",
-            4: "1.8em",
-            5: "2.2em",
-            6: "2.4em",
-            7: "2.8em",
-            8: "3.2em",
+            1: "clamp(1em, 1em + 1vw, 1.2em)",
+            2: "clamp(1.2em, 1.2em + 1vw, 1.4em)",
+            3: "clamp(1.4em, 1.4em + 1vw, 1.6em)",
+            4: "clamp(1.6em, 1.6em + 1vw, 1.8em)",
+            5: "clamp(1.8em, 1.8em + 1vw, 2.2em)",
+            6: "clamp(2.2em, 2.2em + 1vw, 2.4em)",
+            7: "clamp(2.4em, 2.4em + 1vw, 2.8em)",
+            8: "clamp(2.8em, 2.8em + 1vw, 3.2em)",
         },
         space: {
             1: "5px",
@@ -45,9 +45,6 @@ export const {
             4: "20px",
             5: "25px",
             6: "30px"
-        },
-        fonts: {
-            mono: "Lato, monospace"
         },
         fontWeights: {
             1: "300",
@@ -71,14 +68,15 @@ export const {
             4: "9999px"
         },
         transitions: {
-            1: "all 0.2s ease-in-out",
+            1: "all 0.2s ease",
         }
     },
     media: {
-        bp1: "(min-width: 425px)",
-        bp2: "(min-width: 768px)",
-        bp3: "(min-width: 1024px)",
-        bp4: "(min-width: 1336px)"
+        bp1: "(max-width: 425px)",
+        bp2: "(max-width: 768px)",
+        bp3: "(max-width: 1024px)",
+        bp4: "(max-width: 1336px)",
+        ort: "(orientation: portrait)"
     },
     utils: {
         marginX: (value: string) => ({marginLeft: value, marginRight: value}),
